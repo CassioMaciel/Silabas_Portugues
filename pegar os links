@@ -1,0 +1,5 @@
+lynx -dump -listonly  https://www.dicio.com.br/imprescindivel/ | grep www.dicio.com.br > ~/Área\ de\ Trabalho/oi
+#http://www.100security.com.br/lynx/
+lynx -dump https://www.dicio.com.br/imprescindivel/ > ~/Área\ de\ Trabalho/oi
+
+cat entrados | tr '\n' '|' | sed -r  's/(.*)/cat todos | grep -v \"\1\"/g' | sh
